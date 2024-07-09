@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --cor-primaria: #0a3871;
+    --cor-secundaria: #343a40;
+    --cor-terciaria: #495057;
+    --cor-botao-cripto: #0a3871;
+    --cor-botao-descripto: #d8dfe8;
+    --cor-fundo: #f3f5fc;
+    --cor-fundo-1: #ffffff;
+    --fonte-primaria: "Inter", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-primaria);
+    background-color: var(--cor-fundo);
+    width: 1440px;
+    height: 1024px;
+    /* padding: 40px; */
+}
+
+.cabecalho {
+    display: flex;
+    padding: 40px 408px 0 40px;
+}
+
+.cabecalho_titulo {
+    padding-left: 80px;
+}
+
+.decodificador {
+}
+
+.decodificador_conteudo {
+    display: flex;
+}
+
+.decodificador_conteudo_texto {
+    display: flex;
+    flex-direction: column;
+    height: 864px;
+    margin: 80px 80px 0 240px;
+    width: 680px;
+}
+
+#decodificador_conteudo_texto_entrada {
+    background-color: var(--cor-fundo);
+    font-size: 32px;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    border: none;
+    height: 691px;
+}
+
+.decodificador_conteudo_texto_alerta {
+    width: 252px;
+    height: 18px;
+    margin-bottom: 16px;
+}
+
+.decodificador_conteudo_texto_botoes {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.decodificador_conteudo_texto_botaoCripto {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--cor-botao-cripto);
+    color: var(--cor-fundo-1);
+}
+
+.decodificador_conteudo_texto_botaoDescripto {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--cor-botao-descripto);
+}
+
+.decodificador_conteudo_mensagem {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 944px;
+    margin: -48px 0;
+    background-color: var(--cor-fundo-1);
+    border-radius: 32px;
+}
+
+.decodificador_conteudo_mensagem_imagem {
+    width: 336px;
+    height: 304px;
+    margin: 243px 32px 32px;
+    display: none;
+}
+
+.decodificador_conteudo_mensagem_texto {
+    width: 336px;
+    height: 122px; 
+    margin: 0 32px;
+    display: none;
+}
+
+#decodificador_conteudo_mensagem_entrada {
+    width: 336px;
+    height: 781px;
+    margin: 32px;
+    border: none;
+    /* display: none; */
+}
+
+.decodificador_conteudo_mensagem_botao {
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    margin: 0 32px;
+    /* display: none; */
+}
+
+.rodape {
+    color: var(--cor-fundo);
+    background-color: var(--cor-terciaria);
+    margin: -8px 0 0;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.25rem;
+}

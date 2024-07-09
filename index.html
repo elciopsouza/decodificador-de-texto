@@ -1,21 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Decodificador de Texto</h1>
+    <header class="cabecalho">
+        <img src="./images/Frame 6.png" alt="">
+        <h1 class="cabecalho_titulo">Decodificador de Texto</h1>
     </header>
-    <main>
+    <main class="decodificador">
+        <section class="decodificador_conteudo">
+            <div class="decodificador_conteudo_texto">
+                <textarea name="texto" id="decodificador_conteudo_texto_entrada"
+                    placeholder="Digite seu texto"></textarea>
+                <img class="decodificador_conteudo_texto_alerta" src="./images/Frame 1.png" alt="alerta">
+                <div class="decodificador_conteudo_texto_botoes">
+                    <button class="decodificador_conteudo_texto_botaoCripto">Criptografar</button>
+                    <button class="decodificador_conteudo_texto_botaoDescripto">Descriptografar</button>
+                </div>
+            </div>
+            <div class="decodificador_conteudo_mensagem">
+                <img class="decodificador_conteudo_mensagem_imagem" src="./images/imagem.svg" alt="imagem de busca">
+                <img class="decodificador_conteudo_mensagem_texto" src="./images/Frame 5.png" alt="mensagem">
+                <textarea name="texto1" id="decodificador_conteudo_mensagem_entrada"></textarea>
+                <button class="decodificador_conteudo_mensagem_botao">Copiar</button>
 
+            </div>
+        </section>
     </main>
-    <footer>Desenvolvido por Élcio - (14) 99606-6616</footer>
-
+    <footer class="rodape">
+        <p>Desenvolvido por Élcio em 2024 - Contato: +55 (14) 99606-6616</p>
+    </footer>
 </body>
 
 </html>
