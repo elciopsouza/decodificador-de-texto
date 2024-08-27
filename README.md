@@ -3,6 +3,9 @@
 <h2>�� Sobre</h2>
 <p>Challenge do curso Oracle One.</p>
 
+<h2>�� Deploy do Challenge</h2>
+<a href="https://decodificador-de-texto-rose.vercel.app/" target="_blank" rel="noreferrer noopener">
+
 ## �� Tecnologias
 <div>
   <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
