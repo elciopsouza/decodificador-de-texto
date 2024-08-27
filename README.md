@@ -4,7 +4,7 @@
 <p>Challenge do curso Oracle One.</p>
 
 <h2>�� Deploy do Challenge</h2>
-<a href="https://decodificador-de-texto-rose.vercel.app/" target="_blank" rel="noreferrer noopener">
+<a href="https://decodificador-de-texto-rose.vercel.app/" target="_blank" rel="noreferrer noopener">Decodificador</a>
 
 ## �� Tecnologias
 <div>
