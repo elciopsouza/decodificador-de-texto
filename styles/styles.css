@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root {
-    --cor-primaria: #0a3871;
+    --cor-primaria: #4b2b86;
     --cor-secundaria: #343a40;
     --cor-terciaria: #495057;
-    --cor-botao-cripto: #0a3871;
-    --cor-botao-descripto: #d8dfe8;
-    --cor-fundo: #f3f5fc;
+    --cor-botao-cripto: #e75014;
+    --cor-botao-descripto: #f7a600;
+    --cor-fundo: #eaf469;
     --cor-fundo-1: #ffffff;
     --fonte-primaria: "Inter", sans-serif;
 }
@@ -23,7 +23,6 @@ body {
     background-color: var(--cor-fundo);
     width: 1440px;
     height: 1024px;
-    /* padding: 40px; */
 }
 
 .cabecalho {
@@ -35,9 +34,6 @@ body {
     padding-left: 80px;
 }
 
-.decodificador {
-}
-
 .decodificador_conteudo {
     display: flex;
 }
@@ -45,53 +41,57 @@ body {
 .decodificador_conteudo_texto {
     display: flex;
     flex-direction: column;
-    height: 864px;
+    max-height: 782px;
     margin: 80px 80px 0 240px;
     width: 680px;
 }
 
 #decodificador_conteudo_texto_entrada {
     background-color: var(--cor-fundo);
-    font-size: 32px;
+    font-size: 2rem;
     color: var(--cor-primaria);
     font-family: var(--fonte-primaria);
     border: none;
-    height: 691px;
+    height: 669px;
 }
 
 .decodificador_conteudo_texto_alerta {
-    width: 252px;
-    height: 18px;
+    width: 300px;
+    height: 24px;
     margin-bottom: 16px;
 }
 
 .decodificador_conteudo_texto_botoes {
     display: flex;
     gap: 24px;
-    margin-bottom: 72px;
+    margin-bottom: 34px;
 }
 
 .decodificador_conteudo_texto_botaoCripto {
     width: 328px;
     height: 67px;
+    border: 3px solid var(--cor-secundaria);
     border-radius: 24px;
     background-color: var(--cor-botao-cripto);
     color: var(--cor-fundo-1);
+    font-size: 1.5rem;
 }
 
 .decodificador_conteudo_texto_botaoDescripto {
     width: 328px;
     height: 67px;
+    border: 3px solid var(--cor-secundaria);
     border-radius: 24px;
     background-color: var(--cor-botao-descripto);
+    font-size: 1.5rem;
 }
 
 .decodificador_conteudo_mensagem {
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 944px;
-    margin: -48px 0;
+    height: 904px;
+    margin: -48px 0 36px;
     background-color: var(--cor-fundo-1);
     border-radius: 32px;
 }
@@ -100,37 +100,281 @@ body {
     width: 336px;
     height: 304px;
     margin: 243px 32px 32px;
-    display: none;
 }
 
 .decodificador_conteudo_mensagem_texto {
     width: 336px;
     height: 122px; 
     margin: 0 32px;
-    display: none;
 }
 
 #decodificador_conteudo_mensagem_entrada {
     width: 336px;
-    height: 781px;
+    height: 735px;
     margin: 32px;
     border: none;
-    /* display: none; */
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
 }
 
 .decodificador_conteudo_mensagem_botao {
     width: 336px;
     height: 67px;
+    border: 3px solid var(--cor-secundaria);
     border-radius: 24px;
     margin: 0 32px;
-    /* display: none; */
+    font-size: 1.5rem;
+}
+
+.decodificador_conteudo_mensagem768 {
+    display: none;
+    width: 688px;
+    min-height: 133px;
+    text-align: center;
+    margin: 64px 40px 40px;
+    background-color: var(--cor-fundo-1);
+    border-radius: 32px;
+}
+
+.decodificador_conteudo_mensagem_figuras768 {
+    display: none;
+    width: 624px;
+    height: 69px;
+    margin: 32px;
+}
+
+.decodificador_conteudo_mensagem_copiar768 {
+    display: none;
+    width: 624px;
+    min-height: 133px;
+    padding: 32px;
+}
+
+#decodificador_conteudo_mensagem_entrada768 {
+    display: none;
+    width: 624px;
+    height: 180px;
+    border: none;
+    margin: 32px;
+    padding: 32px 0;
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+}
+
+.decodificador_conteudo_mensagem375 {
+    display: none;
+    width: 327px;
+    height: 186px;
+    text-align: center;
+    margin: 64px 24px 40px;
+    background-color: var(--cor-fundo-1);
+    border-radius: 32px;
+}
+
+.decodificador_conteudo_mensagem_figuras375 {
+    display: none;
+    width: 263px;
+    height: 122px;
+    padding-top: 32px;
+    margin: 32px;
+}
+
+.decodificador_conteudo_mensagem_texto375 {
+    display: none;
+}  
+
+.decodificador_conteudo_mensagem375a {
+    display: none;
+    width: 343px;
+    min-height: 595px;
+    text-align: center;
+    margin: 64px 16px 24px;
+    background-color: var(--cor-fundo-1);
+    border-radius: 32px;
+}    
+
+.decodificador_conteudo_mensagem_copiar375a {
+    display: none;
+    width: 343px;
+    height: 595px;
+    margin: 64px 16px 24px;
+    padding-top: 2px;
+    background-color: var(--cor-fundo-1);
+    border-radius: 32px;
+}
+
+#decodificador_conteudo_mensagem_entrada375a {
+    display: none;
+    width: 279px;
+    height: 432px;
+    border: none;
+    margin: 32px;
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
 }
 
 .rodape {
     color: var(--cor-fundo);
     background-color: var(--cor-terciaria);
-    margin: -8px 0 0;
     padding: 10px 0;
     text-align: center;
     font-size: 1.25rem;
+}    
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+    body {
+        width: 768px;
+    }
+
+    .cabecalho {
+        padding: 40px 40px 0 0;
+    }
+
+    .decodificador_conteudo {
+        display: block;
+    }
+
+    .decodificador_conteudo_texto {
+        height: 849px;
+        margin: 152px 40px 0;
+        width: 688px;
+    }
+
+    .decodificador_conteudo_texto_botoes {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .decodificador_conteudo_texto_botaoCripto {
+        width: 332px;
+    }
+    
+    .decodificador_conteudo_texto_botaoDescripto {
+        width: 332px;
+    }
+    
+    .decodificador_conteudo_mensagem {
+        display: none;
+    }
+
+    .decodificador_conteudo_mensagem768 {
+        display: block;
+    }
+
+    .decodificador_conteudo_mensagem_texto768 {
+        padding-top: 32px;
+    }
+
+    .decodificador_conteudo_mensagem_figuras768 {
+        display: block;
+    }
+    
+    .decodificador_conteudo_mensagem_copiar768 {
+        display: block;
+    }
+
+    #decodificador_conteudo_mensagem_entrada768 {
+        display: block;
+    }
+
+    .decodificador_conteudo_mensagem_botao {
+        width: 624px;
+        margin: 0 32px 32px ;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        width: 375px;
+        height: 973px;
+    }
+
+    .cabecalho {
+        margin: 0 -24px;
+        padding: 24px 0;
+    }
+
+    .cabecalho_titulo {
+        font-size: 1.25rem;
+        padding: 0;
+        margin: 16px 0;
+    }
+
+    .decodificador_conteudo {
+        display: block;
+    }
+
+    .decodificador_conteudo_texto {
+        margin: 56px 16px 0;
+        width: 343px;
+    }
+
+    .decodificador_conteudo_mensagem {
+        display: none;
+    }
+    
+    #decodificador_conteudo_texto_entrada {
+        height: 299px;
+    }
+
+    .decodificador_conteudo_texto_alerta {
+        width: 252px;
+        height: 18px;
+        margin-bottom: 16px;
+    }
+
+    .decodificador_conteudo_texto_botoes {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .decodificador_conteudo_texto_botaoCripto {
+        width: 343px;
+    }
+
+    .decodificador_conteudo_texto_botaoDescripto {
+        width: 343px;
+        margin-top: 24px;
+    }
+
+    .decodificador_conteudo_mensagem375 {
+        display: block;
+    }
+
+    .decodificador_conteudo_mensagem_figuras375 {
+        display: block;
+    }
+
+    .decodificador_conteudo_mensagem_texto375 {
+        display: block;
+    }
+
+    .decodificador_conteudo_mensagem375a {
+        display: block;
+    }
+
+    .decodificador_conteudo_mensagem_copiar375a {
+        display: block;
+    }
+
+    #decodificador_conteudo_mensagem_entrada375a {
+        display: block;
+    }
+
+    .decodificador_conteudo_mensagem_botao {
+        width: 279px;
+        margin: 0 32px 32px;
+    }
+
+    .rodape {
+        font-size: 0.7rem;
+    }
 }

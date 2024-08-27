@@ -21,22 +21,48 @@
                     placeholder="Digite seu texto"></textarea>
                 <img class="decodificador_conteudo_texto_alerta" src="./images/Frame 1.png" alt="alerta">
                 <div class="decodificador_conteudo_texto_botoes">
-                    <button class="decodificador_conteudo_texto_botaoCripto">Criptografar</button>
-                    <button class="decodificador_conteudo_texto_botaoDescripto">Descriptografar</button>
+                    <button class="decodificador_conteudo_texto_botaoCripto"
+                        onclick="criptografaTexto()">Criptografar</button>
+                    <button class="decodificador_conteudo_texto_botaoDescripto"
+                        onclick="descriptografaMensagem()">Descriptografar</button>
                 </div>
             </div>
             <div class="decodificador_conteudo_mensagem">
-                <img class="decodificador_conteudo_mensagem_imagem" src="./images/imagem.svg" alt="imagem de busca">
-                <img class="decodificador_conteudo_mensagem_texto" src="./images/Frame 5.png" alt="mensagem">
-                <textarea name="texto1" id="decodificador_conteudo_mensagem_entrada"></textarea>
-                <button class="decodificador_conteudo_mensagem_botao">Copiar</button>
-
+                <div class="decodificador_conteudo_mensagem_figuras">
+                    <img class="decodificador_conteudo_mensagem_imagem" src="./images/imagem.svg" alt="imagem de busca">
+                    <img class="decodificador_conteudo_mensagem_texto" src="./images/Frame 5.png" alt="mensagem">
+                </div>
+                <div class="decodificador_conteudo_mensagem_copiar">
+                    <textarea name="texto1" id="decodificador_conteudo_mensagem_entrada"></textarea>
+                    <button class="decodificador_conteudo_mensagem_botao" onclick="copiaMensagem()">Copiar</button>
+                </div>
+            </div>
+            <div class="decodificador_conteudo_mensagem768">
+                <div class="decodificador_conteudo_mensagem_figuras768">
+                    <img class="decodificador_conteudo_mensagem_texto768" src="./images/Frame 5a.png" alt="mensagem">
+                </div>
+                <div class="decodificador_conteudo_mensagem_copiar768">
+                    <textarea name="texto1" id="decodificador_conteudo_mensagem_entrada768"></textarea>
+                    <button class="decodificador_conteudo_mensagem_botao" onclick="copiaMensagem()">Copiar</button>
+                </div>
+            </div>
+            <div class="decodificador_conteudo_mensagem375">
+                <div class="decodificador_conteudo_mensagem_figuras375">
+                    <img class="decodificador_conteudo_mensagem_texto375" src="./images/Frame 5b.png" alt="mensagem">
+                </div>
+            </div>
+            <div class="decodificador_conteudo_mensagem375a">
+                <div class="decodificador_conteudo_mensagem_copiar375a">
+                    <textarea name="texto1" id="decodificador_conteudo_mensagem_entrada375a"></textarea>
+                    <button class="decodificador_conteudo_mensagem_botao" onclick="copiaMensagem()">Copiar</button>
+                </div>
             </div>
         </section>
     </main>
     <footer class="rodape">
         <p>Desenvolvido por Élcio em 2024 - Contato: +55 (14) 99606-6616</p>
     </footer>
+    <script src="app.js" defer></script>
 </body>
 
 </html>
